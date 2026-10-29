@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Samuel Benavides | Portafolio</title>
+<style>
+:root{
+  --bg:#ffffff; --text:#000000; --muted:#6b6b6b; --line:#e3e3e3; --btn-bg:#000; --btn-text:#fff;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#000000; --text:#ffffff; --muted:#9a9a9a; --line:#2a2a2a; --btn-bg:#fff; --btn-text:#000; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#000000; --text:#ffffff; --muted:#9a9a9a; --line:#2a2a2a; --btn-bg:#fff; --btn-text:#000; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px); scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:"Helvetica Neue",Helvetica,Inter,Arial,sans-serif; -webkit-font-smoothing:antialiased;
+}
+header{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:28px clamp(20px,5vw,64px); font-size:.8rem; letter-spacing:.14em; text-transform:uppercase;
+}
+header a{color:var(--text); text-decoration:none}
+.hero{
+  padding:clamp(60px,14vh,160px) clamp(20px,5vw,64px) clamp(40px,8vh,90px);
+  max-width:1200px;
+}
+.eyebrow{font-size:.8rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0 0 24px}
+h1{
+  margin:0 0 28px; font-weight:700; letter-spacing:-.04em; line-height:.95;
+  font-size:clamp(3rem,11vw,9rem);
+}
+.lead{max-width:520px; font-size:1.2rem; line-height:1.5; color:var(--muted); margin:0 0 40px}
+.btn{
+  display:inline-block; background:var(--btn-bg); color:var(--btn-text); text-decoration:none;
+  padding:16px 34px; font-size:.8rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600;
+}
+section{padding:clamp(40px,8vh,90px) clamp(20px,5vw,64px) 80px; max-width:1200px}
+h2{font-size:.8rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0 0 24px; font-weight:500}
+ul{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+li{
+  display:flex; justify-content:space-between; align-items:baseline;
+  padding:22px 0; border-bottom:1px solid var(--line);
+  font-size:clamp(1.6rem,4vw,2.8rem); font-weight:600; letter-spacing:-.02em;
+}
+li span{font-size:.8rem; letter-spacing:.14em; color:var(--muted); font-weight:400}
+footer{padding:40px clamp(20px,5vw,64px); font-size:.8rem; color:var(--muted)}
+li a{color:var(--text); text-decoration:none; word-break:break-all}
+li a:hover{text-decoration:underline}
+#contacto li{font-size:clamp(1.2rem,3.4vw,2.2rem)}
+.precios li{align-items:flex-start}
+.precios strong{font-weight:600}
+.monto{text-align:right}
+.monto small{display:block; margin-top:8px; font-size:.9rem; font-weight:400; letter-spacing:0; color:var(--muted); line-height:1.6}
+.nota{margin:24px 0 0; max-width:640px; font-size:.85rem; line-height:1.5; color:var(--muted)}
+.sub{display:block; font-size:.75rem; font-weight:400; color:var(--muted); letter-spacing:0; text-transform:none; margin-top:4px}
+</style>
+</head>
+<body>
+<header>
+  <a href="#inicio">Samuel Benavides</a>
+  <span><a href="#conocimientos">Conocimientos</a> &nbsp;&nbsp; <a href="#precios">Precios</a> &nbsp;&nbsp; <a href="#contacto">Contacto</a></span>
+</header>
+<div class="hero" id="inicio">
+  <p class="eyebrow">Programación &amp; Ciberseguridad</p>
+  <h1>Samuel<br>Benavides.</h1>
+  <p class="lead">Licenciado en ciberseguridad.</p>
+  <a class="btn" href="#conocimientos">Ver conocimientos</a>
+</div>
+<section id="conocimientos">
+  <h2>Conocimientos</h2>
+  <ul>
+    <li>HTML <span>01</span></li>
+    <li>Python <span>02</span></li>
+    <li>C <span>03</span></li>
+    <li>C+ <span>04</span></li>
+    <li>C++ <span>05</span></li>
+    <li>C# <span>06</span></li>
+    <li>Java <span>07</span></li>
+    <li>Bash <span>08</span></li>
+    <li>Ciberseguridad <span>09</span></li>
+  </ul>
+</section>
+<section id="precios">
+  <h2>Precios</h2>
+  <ul class="precios">
+    <li><strong>Página web</strong><div class="monto">₡100&nbsp;000<small>≈ 0,00275 BTC<br>≈ US$220</small></div></li>
+    <li><strong>Auditoría</strong><div class="monto">₡50&nbsp;000<small>≈ 0,00137 BTC<br>≈ US$110</small></div></li>
+    <li><strong>Hacking de redes sociales <span class="sub">(precio negociable)</span></strong><div class="monto">₡200&nbsp;000<small>≈ 0,00549 BTC<br>≈ US$440</small></div></li>
+    <li><strong>crack de contraseñas</strong><div class="monto">₡500&nbsp;000<small>≈ 0,01375 BTC<br>≈ US$1&nbsp;100,56</small></div></li>
+    <li><strong>Ciberataque <span class="sub">(*El precio depende si es DoS o DDoS)</span></strong><div class="monto">₡200&nbsp;000<small>≈ 0,00549 BTC<br>≈ US$440</small></div></li>
+    <li><strong>Comprometimiento de sistemas </strong><div class="monto">₡0<small>≈ 0 BTC<br>≈ US$0</small></div></li>
+    <li><strong>Programacion de sistemas operativos en base a Arch Linux</strong><div class="monto">₡0<small>≈ 0 BTC<br>≈ US$0</small></div></li>
+  </ul>
+  <p class="nota">Pago en Bitcoin o PayPal. Equivalencias aproximadas al 29 de octubre de 2026 (₡455 por dólar y 1 BTC ≈ US$80&nbsp;000); el monto final se calcula al momento del pago.</p>
+</section>
+<section id="contacto">
+  <h2>Contacto</h2>
+  <ul>
+    <li><a href="mailto:samuelbenavides202@gmail.com">samuelbenavides202@gmail.com</a> <span>CORREO</span></li>
+    <li><a href="tel:+50671942376">+506 7194 2376</a> <span>TELÉFONO</span></li>
+  </ul>
+</section>
+<footer>© Samuel Benavides</footer>
+</body>
+</html>
